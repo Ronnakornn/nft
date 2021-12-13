@@ -1,0 +1,5 @@
+
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?nftgamingthai\.com
+RewriteRule ^(.*)$ https://www.nftgamingthai.com/$1 [R,L]
